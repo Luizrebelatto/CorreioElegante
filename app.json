@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "CorreioElegante",
+    "slug": "CorreioElegante",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
