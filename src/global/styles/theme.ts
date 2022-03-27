@@ -5,7 +5,9 @@ export default {
     grey: '#8D8D8D',
     grey_dark: '#2F394B',
     grey_light: '#9CABC2',
-    text: '#E7DFDD'
+    background_light: '#F8F6FF',
+    text: '#E7DFDD',
+    text_title:'#2F394B'
   },
   
   fonts: {
