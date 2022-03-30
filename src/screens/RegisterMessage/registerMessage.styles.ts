@@ -6,7 +6,6 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 21px;
 `;
 
 export const InputName = styled.TextInput`
@@ -18,5 +17,15 @@ export const InputName = styled.TextInput`
 `;
 
 export const ViewInput = styled.View`
+  margin-top: 21px;
+  margin-bottom: 26px;
   align-items: center;
+`;
+
+export const Content = styled.View`
+  width: 100%;
+  height: 80%;
+  background-color: ${({ theme }) => theme.colors.background_light};
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 `;

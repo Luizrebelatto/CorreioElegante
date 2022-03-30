@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content } from './registerMessage.styles';
 
 
 export default function RegisterMessage(){
@@ -20,6 +20,7 @@ export default function RegisterMessage(){
           onChangeText={(value) => handleName(value)}
         />
       </ViewInput>
+      <Content></Content>
     </Container>
   )
 }
