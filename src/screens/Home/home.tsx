@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+
 import ImageSticker from '../../assets/png/GroupDiningTable.png';
 import { Container } from '../../shared/generals'
 import { Circle, Image, WrapperCircle, Content, Title, TextContent, Button, ButtonText, Retangle, TextView } from './home.styles';
