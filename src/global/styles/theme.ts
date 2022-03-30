@@ -7,7 +7,8 @@ export default {
     grey_light: '#9CABC2',
     background_light: '#F8F6FF',
     text: '#E7DFDD',
-    text_title:'#2F394B'
+    text_title:'#2F394B',
+    white: '#FFFFFF'
   },
   
   fonts: {

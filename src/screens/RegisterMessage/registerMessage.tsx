@@ -1,12 +1,25 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import { Text } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title } from './registerMessage.styles';
+import { Title, InputName, ViewInput } from './registerMessage.styles';
+
 
 export default function RegisterMessage(){
+  const [name, setName] = useState('');
+
+  function handleName(text: string){
+    setName(text)
+  }
   return(
     <Container>
-      <Title>Mensagem Registrada</Title>
+      <Title>Você gostaria de se identificar?</Title>
+      <ViewInput>
+        <InputName
+          placeholder='Digite seu nome ou apelido'
+          value={name}
+          onChangeText={(value) => handleName(value)}
+        />
+      </ViewInput>
     </Container>
   )
 }

@@ -6,6 +6,7 @@ import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_700Bold} from 
 
 import theme from './src/global/styles/theme';
 import { Home } from './src/screens/Home';
+import { RegisterMessage } from './src/screens/RegisterMessage';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,7 +21,7 @@ export default function App() {
   
   return (
     <ThemeProvider theme={theme}>
-        <Home/>
+        <RegisterMessage/>
     </ThemeProvider>
   );
 }
