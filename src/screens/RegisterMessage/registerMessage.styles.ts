@@ -37,3 +37,9 @@ export const TitleView = styled.Text`
   text-align: center;
   margin-top: 20px;
 `;
+
+export const TitleInput = styled.Text`
+  font-size: 20px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.grey_dark};
+`
