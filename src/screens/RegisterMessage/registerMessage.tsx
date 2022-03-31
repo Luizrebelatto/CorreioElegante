@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle } from './registerMessage.styles';
 
 import FastFood from '../../assets/png/fast-food.png';
 import Beer from '../../assets/png/beer.png';
@@ -58,8 +58,19 @@ export default function RegisterMessage(){
           onChangeText={(value) => handleMessage(value)}
         />
       </View>
-     
 
+      <View style={{alignItems:'center', marginTop: 15}}>
+        <Button activeOpacity={0.8}>
+            <Retangle
+              colors={['#E06C88','#B73058']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
+              <ButtonText>ENVIAR CORREIO</ButtonText>
+            </Retangle>
+        </Button>
+      </View>
+      
       </Content>
       
     </Container>
