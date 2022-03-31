@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Text } from 'react-native';
+import { Text, View } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput, Content, TitleView, TitleInput, Button, ButtonText, Retangle } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage } from './registerMessage.styles';
 
 import FastFood from '../../assets/png/fast-food.png';
 import Beer from '../../assets/png/beer.png';
@@ -42,23 +42,22 @@ export default function RegisterMessage(){
       <Content>
         <TitleView>Escolha uma refeição abaixo</TitleView>
         <TitleInput>Email</TitleInput>
-        <ViewInput>
+      <View style={{alignItems: 'center'}}>
         <InputName
           placeholder='Digite o email'
           value={email}
           onChangeText={(value) => handleEmail(value)}
         />
-      </ViewInput>
+      </View>
+
       <TitleInput>Surprenda</TitleInput>
-      <ViewInput>
-        
-        <InputName
+      <View style={{alignItems: 'center'}}>
+        <InputMessage
           placeholder='Solte o verbo'
           value={message}
           onChangeText={(value) => handleMessage(value)}
         />
-      </ViewInput>
-
+      </View>
      
 
       </Content>
