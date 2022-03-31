@@ -29,3 +29,11 @@ export const Content = styled.View`
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 `;
+
+export const TitleView = styled.Text`
+  font-size: 20px;
+  font-family: ${({ theme }) => theme.fonts.bold};
+  color: ${({ theme }) => theme.colors.grey_dark};
+  text-align: center;
+  margin-top: 20px;
+`;
