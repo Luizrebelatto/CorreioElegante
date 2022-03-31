@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle, InputEmail, ViewButton } from './registerMessage.styles';
 
 import FastFood from '../../assets/png/fast-food.png';
 import Beer from '../../assets/png/beer.png';
@@ -39,27 +39,28 @@ export default function RegisterMessage(){
           onChangeText={(value) => handleName(value)}
         />
       </ViewInput>
+      
       <Content>
         <TitleView>Escolha uma refeição abaixo</TitleView>
-        <TitleInput>Email</TitleInput>
-      <View style={{alignItems: 'center'}}>
-        <InputName
+      <TitleInput>Email</TitleInput>
+      <ViewInput>
+        <InputEmail
           placeholder='Digite o email'
           value={email}
           onChangeText={(value) => handleEmail(value)}
         />
-      </View>
+      </ViewInput>
 
       <TitleInput>Surprenda</TitleInput>
-      <View style={{alignItems: 'center'}}>
+      <ViewInput>
         <InputMessage
           placeholder='Solte o verbo'
           value={message}
           onChangeText={(value) => handleMessage(value)}
         />
-      </View>
+      </ViewInput>
 
-      <View style={{alignItems:'center', marginTop: 15}}>
+      <ViewButton>
         <Button activeOpacity={0.8}>
             <Retangle
               colors={['#E06C88','#B73058']}
@@ -69,7 +70,7 @@ export default function RegisterMessage(){
               <ButtonText>ENVIAR CORREIO</ButtonText>
             </Retangle>
         </Button>
-      </View>
+      </ViewButton>
       
       </Content>
       

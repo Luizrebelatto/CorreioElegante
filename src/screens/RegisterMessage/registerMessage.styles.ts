@@ -7,6 +7,7 @@ export const Title = styled.Text`
   color: ${({ theme }) => theme.colors.white};
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 21px;
 `;
 
 export const InputName = styled.TextInput`
@@ -18,8 +19,6 @@ export const InputName = styled.TextInput`
 `;
 
 export const ViewInput = styled.View`
-  margin-top: 21px;
-  margin-bottom: 26px;
   align-items: center;
 `;
 
@@ -29,6 +28,7 @@ export const Content = styled.View`
   background-color: ${({ theme }) => theme.colors.background_light};
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  margin-top: 26px;
 `;
 
 export const TitleView = styled.Text`
@@ -71,4 +71,19 @@ export const InputMessage = styled.TextInput`
   padding-left: 15px;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 10px;
+  border: 3px solid ${({ theme }) => theme.colors.pink_dark} ;
 `
+
+export const InputEmail = styled.TextInput`
+  width: 323px;
+  height: 48px;
+  padding-left: 15px;
+  background-color: ${({ theme }) => theme.colors.white};
+  border-radius: 10px;
+  border: 3px solid ${({ theme }) => theme.colors.pink_dark} ;
+`;
+
+export const ViewButton = styled.View`
+  align-items: center;
+  margin-top: 2px;
+`;
