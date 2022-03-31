@@ -87,3 +87,19 @@ export const ViewButton = styled.View`
   align-items: center;
   margin-top: 2px;
 `;
+
+export const ListIcons = styled.ScrollView.attrs({
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+})``;
+
+export const ViewImages = styled.View`
+  flex-direction: row;
+  height: 90;
+  width: 100%;
+`;
+
+export const ViewIcon = styled.View`
+  height: 90px;
+  width: 90px;
+`;

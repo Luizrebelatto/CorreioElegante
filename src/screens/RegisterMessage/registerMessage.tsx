@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { View, Image, Text } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle, InputEmail, ViewButton } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle, InputEmail, ViewButton, ListIcons, ViewImages, ViewIcon } from './registerMessage.styles';
 
 import FastFood from '../../assets/png/fast-food.png';
 import Beer from '../../assets/png/beer.png';
@@ -42,6 +42,33 @@ export default function RegisterMessage(){
       
       <Content>
         <TitleView>Escolha uma refeição abaixo</TitleView>
+
+        <ViewImages>
+        <ListIcons>
+          <ViewIcon>
+            <Image source={FastFood} style={{width:50, height:55}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={Beer} style={{width:50, height:55}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={Champagne} style={{width:15, height:30}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={Cheese} style={{width:50, height:55}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={FrenchFries} style={{width:50, height:55}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={lollipop} style={{width:50, height:55}}/>
+          </ViewIcon>
+          <ViewIcon>
+            <Image source={Wine} style={{width:50, height:55}}/>
+          </ViewIcon>
+        </ListIcons>
+      </ViewImages>
+
       <TitleInput>Email</TitleInput>
       <ViewInput>
         <InputEmail
