@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Image, Text } from 'react-native';
 import { Container } from '../../shared/generals'
-import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle, InputEmail, ViewButton, ListIcons, ViewImages, ViewIcon } from './registerMessage.styles';
+import { Title, InputName, ViewInput, Content, TitleView, TitleInput, InputMessage, Button, ButtonText, Retangle, InputEmail, ViewButton, ListIcons, ViewImages, ViewIcon, ViewGradient } from './registerMessage.styles';
 
 import FastFood from '../../assets/png/fast-food.png';
 import Beer from '../../assets/png/beer.png';
@@ -45,27 +45,76 @@ export default function RegisterMessage(){
 
         <ViewImages>
         <ListIcons>
-          <ViewIcon>
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={FastFood} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={Beer} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
-            <Image source={Champagne} style={{width:15, height:30}}/>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
+            <Image source={Champagne} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={Cheese} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={FrenchFries} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={lollipop} style={{width:50, height:55}}/>
           </ViewIcon>
-          <ViewIcon>
+          </ViewGradient>
+
+          <ViewGradient>
+          <ViewIcon 
+              colors={['#FFFFFF','#9CABC259']}
+              start={{x: 0.5, y:0 }}
+              end={{x: 0.5, y: 1}}
+            >
             <Image source={Wine} style={{width:50, height:55}}/>
           </ViewIcon>
+          </ViewGradient>
+          
         </ListIcons>
       </ViewImages>
 

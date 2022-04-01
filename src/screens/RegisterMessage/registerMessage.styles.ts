@@ -95,11 +95,18 @@ export const ListIcons = styled.ScrollView.attrs({
 
 export const ViewImages = styled.View`
   flex-direction: row;
-  height: 90;
+  height: 90px;
   width: 100%;
+  margin-top: 10px;
 `;
 
-export const ViewIcon = styled.View`
+export const ViewIcon = styled(LinearGradient)`
+  border-radius: 15px;
   height: 90px;
   width: 90px;
+`;
+
+export const ViewGradient = styled.View`
+  margin-left: 13px;
+  margin-right: 10px;
 `;
